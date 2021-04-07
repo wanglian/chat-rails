@@ -11,7 +11,7 @@ The following features are implemented:
 
 ## Requirements
 
-* Ruby 2.6.3
+* Ruby > 2.5
 * Rails 6.1.3
 
 ## Getting Started
