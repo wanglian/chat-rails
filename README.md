@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample chat app backend.
 
-Things you may want to cover:
+The following features are implemented:
 
-* Ruby version
+* Get list of all channels
+* Join a channel
+* Send message to a channel
+* Get list of messages in a specific channel
 
-* System dependencies
+## Requirements
 
-* Configuration
+* Ruby 2.6.3
+* Rails 6.1.3
 
-* Database creation
+## Getting Started
 
-* Database initialization
+```
+> bundle
+> rails db:migrate
+> rails server
+```
 
-* How to run the test suite
+API Docs: `http://localhost:3000/apipie`
 
-* Services (job queues, cache servers, search engines, etc.)
+User API endpoints:
+```
+> rails routes | grep auth
+POST   /api/v1/auth/sign_in(.:format)  # sign in
+DELETE /api/v1/auth/sign_out(.:format) # sign out
+POST   /api/v1/auth(.:format)          # sign up
+```
 
-* Deployment instructions
+## Run Tests
 
-* ...
+```
+bundle exec rspec
+```
